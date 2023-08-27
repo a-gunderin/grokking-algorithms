@@ -1,3 +1,3 @@
 # Grokking Algorithms
 
-## Exercises from the book
+## Algorithms from the book
