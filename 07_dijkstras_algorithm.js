@@ -25,7 +25,7 @@ const parents = {
 	fin: null
 };
 
-let processed = [];
+const processed = [];
 
 const findLowestCostNode = () => {
 	let lowestCost = Infinity;
@@ -58,10 +58,10 @@ while(node !== null) {
 		});
 	}
 
-
-	processed = [...processed, node ];
+	processed.push(node);
 	node = findLowestCostNode(costs);
 }
 
+console.log(processed);
 console.log(parents);
 console.log(costs);
